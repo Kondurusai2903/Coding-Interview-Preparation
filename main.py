@@ -202,3 +202,27 @@ n = 5
 #     for z in range(n-x-1):
 #         print("* ", end=" ")
 #     print()
+# ----------------------------NUmeric diamond pattern-----------------------------------------------
+n = 9
+for i in range(n):
+    for j in range(n-i):
+        print("  ", end=" ")
+    k = 0
+    while (k < i+1):
+        print(str(k+1)+" ", end=" ")
+        k += 1
+    while (k-1 > 0):
+        print(str(k-1)+" ", end=" ")
+        k -= 1
+    print()
+for i in range(1, n+1):
+    for j in range(i+1):
+        print("  ", end=" ")
+    k = 0
+    while k < 2*(n-i)//2:
+        print(str(k+1)+" ", end=" ")
+        k += 1
+    while k-1 > 0:
+        print(str(k-1)+" ", end=" ")
+        k -= 1
+    print()
